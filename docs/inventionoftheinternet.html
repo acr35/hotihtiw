@@ -1,10 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HQF0LYSQF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3HQF0LYSQF');
+    </script>
+    <!-- Required Meta Tags -->
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://cdn.freebiesupply.com/logos/large/2x/cool-logo-png-transparent.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/caa5457cb2.js" crossorigin="anonymous"></script>
+    <title>Invention of the Internet</title>
+    <style>
+        .navbar-brand{
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .logo {
+            height: 50px;
+            padding-right: 15px;
+            padding-left: 5px;
+        }
+
+        body{
+            background-color: #D8D3CD;
+        }
+
+        footer{
+            margin-top: 150px;
+        }
+
+        .title{
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+        .timeline {
+            position: relative;
+            padding: 10px;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #D8D3CD;
+
+        }
+
+        .timeline:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -1px;
+            border-right: 3px dashed #B5AEA6;
+            height: 100%;
+            display: block;
+        }
+
+
+        .timeline-row {
+            padding-left: 50%;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-row .timeline-time {
+            position: absolute;
+            right: 50%;
+            top: 31px;
+            text-align: right;
+            margin-right: 20px;
+            color: #B5AEA6;
+            font-size: 1.5rem;
+            font-family: "Iowan Old Style" , sans-serif;
+
+        }
+        .timeline-row .timeline-content {
+            position: relative;
+            padding: 20px 30px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        .timeline-row .timeline-content:after {
+            content: "";
+            position: absolute;
+            top: 20px;
+            height: 3px;
+            width: 40px;
+        }
+
+
+        .timeline-row .timeline-content:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            right: -50px;
+            width: 20px;
+            height: 20px;
+            border-radius: 100px;
+            z-index: 100;
+            background: #B5AEA6;
+            border: 4px #c4d2e2;
+        }
+        .timeline-row:nth-child(even) .timeline-content {
+            background-color: #B5AEA6;
+            margin-left: 40px;
+            text-align: left;
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+
+        }
+
+        .timeline-row:nth-child(even) .timeline-content:after {
+            left: -39px;
+            border-right: 18px solid #B5AEA6;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+        }
+
+        .timeline-row:nth-child(even) .timeline-content:before {
+            left: -50px;
+            right: initial;
+        }
+        .timeline-row:nth-child(odd) {
+            padding-left: 0;
+            padding-right: 50%;
+        }
+        .timeline-row:nth-child(odd) .timeline-time {
+            right: auto;
+            left: 50%;
+            text-align: left;
+            margin-right: 0;
+            margin-left: 20px;
+            color: #B5AEA6;
+            font-family: "Iowan Old Style" , sans-serif;
+        }
+        .timeline-row:nth-child(odd) .timeline-content {
+            background-color: #B5AEA6;
+            margin-right: 40px;
+            margin-left: 0;
+            text-align: right;
+            font-family: "Iowan Old Style" , sans-serif;
+            color: #30475E;
+        }
+        .timeline-row:nth-child(odd) .timeline-content:after {
+            right: -39px;
+            border-left: 18px solid #B5AEA6;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+
+        }
+
+        @media (max-width: 767px) {
+            .timeline {
+                padding: 15px 10px;
+            }
+            .timeline:after {
+                left: 28px;
+            }
+            .timeline .timeline-row {
+                padding-left: 0;
+                margin-bottom: 16px;
+            }
+            .timeline .timeline-row .timeline-time {
+                position: relative;
+                right: auto;
+                top: 0;
+                text-align: left;
+                margin: 0 0 6px 56px;
+            }
+            .timeline .timeline-row .timeline-time strong {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+            .timeline .timeline-row .timeline-content {
+                padding: 15px;
+                margin-left: 56px;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+                position: relative;
+            }
+            .timeline .timeline-row .timeline-content:after {
+                right: auto;
+                left: -39px;
+                top: 32px;
+            }
+            .timeline .timeline-row:nth-child(odd) {
+                padding-right: 0;
+            }
+            .timeline .timeline-row:nth-child(odd) .timeline-time {
+                position: relative;
+                right: auto;
+                left: auto;
+                top: 0;
+                text-align: left;
+                margin: 0 0 6px 56px;
+            }
+            .timeline .timeline-row:nth-child(odd) .timeline-content {
+                margin-right: 0;
+                margin-left: 55px;
+            }
+            .timeline .timeline-row:nth-child(odd) .timeline-content:after {
+                right: auto;
+                left: -39px;
+                top: 32px;
+                border-right: 18px solid #5a99ee;
+                border-left: inherit;
+            }
+            .timeline.animated .timeline-row:nth-child(odd) .timeline-content {
+                left: 20px;
+            }
+            .timeline.animated .timeline-row.active:nth-child(odd) .timeline-content {
+                left: 0;
+            }
+        }
+
+        .bg-dark {
+            background-color: #ff9233 !important;
+        }
+
+    </style>
 </head>
 <body>
+
+
+<!-- Adding NavBar -->
+<div class="container-fluid">
+    <div class="row no-gutters">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="https://image.flaticon.com/icons/svg/56/56906.svg" class="image-responsive logo" alt="Navbar Globe Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            How The Internet Works
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="domainnamesandicann.html">Domain Names and ICANN</a>
+                            <a class="dropdown-item" href="dns.html">DNS</a>
+                            <a class="dropdown-item" href="ipaddressespacketsrouting.html">IP Addresses, Packets, and Routing</a>
+                            <a class="dropdown-item" href="httpandhttps.html">HTTP and HTTPS</a>
+                            <a class="dropdown-item" href="w3chtmlcss.html">w3c, HTML, and CSS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkk" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            History of The Internet
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="inventionoftheinternet.html">Domain Names and ICANN</a>
+                            <a class="dropdown-item" href="internetsearch.html">DNS</a>
+                            <a class="dropdown-item" href="browserwars.html">IP Addresses, Packets, and Routing</a>
+                            <a class="dropdown-item" href="dotcombubble.html">HTTP and HTTPS</a>
+                            <a class="dropdown-item" href="people.html">w3c, HTML, and CSS</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div class="title">
+    <h1>INVENTION OF THE INTERNET</h1>
+</div>
+
+
+<div class="container bootdey">
+    <div class="row gutters">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <div class="card">
+
+                <!-- Timeline start -->
+                <div class="timeline">
+                    <div class="timeline-row">
+                        <div class="timeline-time">
+                            1950's
+                        </div>
+                        <div class="timeline-dot fb-bg"></div>
+                        <div class="timeline-content">
+                            <p>The internet generated 300 and 1 billion dollars in business and was responsible for the one third of US economic. The seminal idea behind the internet was envisioned by a psychologist named J.C.R. Licklider, a professor at MIT in 1950s. At the time, terminals would be connected to a very large server and users would all access the data at the same time. His idea was that the computers would allow you to communicate better and that would allow you to better connect all the computers together so they might be more useful in sharing information among people. The first computers were enormously large and expensive devices that were never intended to communicate.</p><div class="">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="timeline-row">
+                        <div class="timeline-time">
+                            1966's
+                        </div>
+                        <div class="timeline-dot green-one-bg"></div>
+                        <div class="timeline-content green-one">
+                            <p>
+                                At MIT, a graduate student named Leonard Kleinrock begin applying Queuing Theory. It’s a great tool for evaluating computer in communication systems. In 1966, Robert Taylor of (ARPA), The Advanced Research Projects Agency, needed a separate terminal to log into each of several time shared computers at research centers across the country. Taylor had to move from terminal to terminal to work on a different computer. Taylor wanted to create a network because it was difficult to have 3 terminals to take 3 different machines instead in 1 terminal he could talk to all.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-row">
+                        <div class="timeline-time">
+                            1966's
+                        </div>
+                        <div class="timeline-dot green-two-bg"></div>
+                        <div class="timeline-content green-two">
+                            <p>A creation of network which would link hetero genius computers to each other through this network. This invention would save money, time, and resources and tie each time shared computer to one of them in 1968. Roberts sought out the engineers to build the a advanced research projects agency computer network, the ARPA NET. It was going to be based on special mini computers called Interface Message Processor and packet switching.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-row">
+                        <div class="timeline-time">
+                            1969's
+                        </div>
+                        <div class="timeline-dot green-three-bg"></div>
+                        <div class="timeline-content green-three">
+                            <p>
+                                In 1969, the first piece created for the computer network that was the 4 runner of the internet arrived at UCLA. Bob Taylor was given one million dollar to build his idea and UCLA created the first code.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="timeline-row">
+                        <div class="timeline-time">
+                            1971's
+                        </div>
+                        <div class="timeline-dot green-four-bg"></div>
+                        <div class="timeline-content green-four">
+                            <p>
+                                In 1971, ARPA net had 18 main frame computers that hooked into the network.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-row">
+                        <div class="timeline-time">
+                            1983's
+                        </div>
+                        <div class="timeline-dot teal-bg"></div>
+                        <div class="timeline-content teal">
+                            <p>
+                                In 1983, congress President Bush Congress made it official for the internet to become a public resources for everyone to use. Also, that year, ARPA became a research defense project that only a few colleges could use, because it was a difficult resource for everyone to use. Tim Berners Lee invented the World Wide Web to help link websites to one another.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-row">
+                        <div class="timeline-time">
+                            1983's
+                        </div>
+                        <div class="timeline-dot sea-green-bg"></div>
+                        <div class="timeline-content sea-green">
+                            <p>
+                                In 1993, Robert Khan, known as the father of the internet, replaced Mosaic into Netscape.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Timeline end -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+        <!--Grid row-->
+        <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">CONTACT US</h5>
+
+                <p>
+                    If you have any questions or feedback about this webpage or our website's content, please feel free to use the links on the right to contact this website's creators!
+                </p>
+            </div>
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Abhishek Ranpura</h5>
+
+                <ul class="list-unstyled">
+                    <li style="color: white;">
+                        <i class="fab fa-github-square"></i><a href="https://github.com/acr35" class="text-dark">GitHub Repository</a>
+                    </li>
+                    <li style="color: white;">
+                        <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/abhishek-ranpura-1337991b7/" class="text-dark">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2020 Copyright:
+        <a class="text-dark" href="#">Abhishek Ranpura</a>
+    </div>
+</footer>
+
+
+<!-- JQuery, Popper.js, Bootstrap JS (Keep this at the end of the body)-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
 </html>
